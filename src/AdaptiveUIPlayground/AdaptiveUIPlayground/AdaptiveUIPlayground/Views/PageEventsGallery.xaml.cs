@@ -28,20 +28,21 @@ namespace AdaptiveUIPlayground.Views
 
         void OnPageSizeChanged(object sender, EventArgs e)
         {
-            if(Width < BigScreen)
+            if (Device.RuntimePlatform == Device.UWP)
             {
-
-            }
-
-            var isLandscape = Width > Height;
-
-            if(isLandscape)
-            {
-                OrientationLayout.Orientation = StackOrientation.Horizontal;
+                if (Width < BigScreen)
+                    FirstGrid.BackgroundColor = Color.Blue;
+                else
+                    FirstGrid.BackgroundColor = Color.Red;
             }
             else
             {
-                OrientationLayout.Orientation = StackOrientation.Vertical;
+                var isLandscape = Width > Height;
+
+                if (isLandscape)
+                    OrientationLayout.Orientation = StackOrientation.Horizontal;
+                else
+                    OrientationLayout.Orientation = StackOrientation.Vertical;
             }
         }
     }

@@ -8,6 +8,7 @@
         <StackLayout
             x:Name="OrientationLayout">
             <Grid
+                x:Name="FirstGrid"
                 HeightRequest="100"
                 WidthRequest="200"
                 BackgroundColor="Red"/>
