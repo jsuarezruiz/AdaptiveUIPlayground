@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -90,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdaptiveUIPlayground\AdaptiveUIPlayground.csproj">
-      <Project>{0FA8C2DB-ED0C-4A80-B5CC-C6D1C7F7257D}</Project>
+      <Project>{C00D8BC8-B8A2-45B4-B261-FC26FA05935D}</Project>
       <Name>AdaptiveUIPlayground</Name>
     </ProjectReference>
   </ItemGroup>

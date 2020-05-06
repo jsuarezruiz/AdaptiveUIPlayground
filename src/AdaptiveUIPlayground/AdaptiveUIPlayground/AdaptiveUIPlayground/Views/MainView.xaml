@@ -15,6 +15,10 @@
                     x:Name="PageEventsBtn"
                     Text="Page Events Gallery"
                     Clicked="OnPageEventsBtnClicked"/>
+                <Button
+                    x:Name="VisualStateBtn"
+                    Text="VisualState Gallery"
+                    Clicked="OnVisualStateBtnClicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

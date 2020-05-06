@@ -19,5 +19,10 @@ namespace AdaptiveUIPlayground.Views
         {
             Navigation.PushAsync(new PageEventsGallery());
         }
+
+        void OnVisualStateBtnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new VisualStateGallery());
+        }
     }
 }
