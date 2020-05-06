@@ -11,6 +11,10 @@
                     x:Name="DeviceBtn"
                     Text="Device Gallery"
                     Clicked="OnDeviceBtnClicked"/>
+                <Button
+                    x:Name="PageEventsBtn"
+                    Text="Page Events Gallery"
+                    Clicked="OnPageEventsBtnClicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

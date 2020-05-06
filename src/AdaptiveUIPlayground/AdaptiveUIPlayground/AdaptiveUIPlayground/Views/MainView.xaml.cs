@@ -14,5 +14,10 @@ namespace AdaptiveUIPlayground.Views
         {
             Navigation.PushAsync(new DeviceGallery());
         }
+
+        void OnPageEventsBtnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PageEventsGallery());
+        }
     }
 }

@@ -28,6 +28,9 @@
                     </OnIdiom>
                 </Label.FontSize>
             </Label>
+            <Label
+                x:Name="CSharpOnIdiomLabel"
+                Text="Using Device.RuntimePlatform"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
