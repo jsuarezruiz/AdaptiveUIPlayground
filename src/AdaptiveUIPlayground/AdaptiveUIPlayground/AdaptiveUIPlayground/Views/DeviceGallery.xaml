@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptiveUIPlayground.Views.DeviceGallery"
+    Title="DeviceGallery">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Using OnPlatform">
+                <Label.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="12" />
+                        <On Platform="iOS" Value="18" />
+                        <On Platform="UWP" Value="24" />
+                    </OnPlatform>
+                </Label.FontSize>
+            </Label>
+            <Label
+                x:Name="CSharpOnPlarformLabel"
+                Text="Using Device.RuntimePlatform"/>
+            <Label
+                Text="Using OnPlatform">
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double">
+                        <OnIdiom.Phone>18</OnIdiom.Phone>
+                        <OnIdiom.TV>28</OnIdiom.TV>
+                    </OnIdiom>
+                </Label.FontSize>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

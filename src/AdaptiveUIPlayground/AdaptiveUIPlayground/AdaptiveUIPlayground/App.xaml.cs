@@ -1,6 +1,5 @@
-﻿using System;
+﻿using AdaptiveUIPlayground.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace AdaptiveUIPlayground
 {
@@ -10,7 +9,7 @@ namespace AdaptiveUIPlayground
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()
