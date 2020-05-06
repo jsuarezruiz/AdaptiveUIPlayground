@@ -19,6 +19,10 @@
                     x:Name="VisualStateBtn"
                     Text="VisualState Gallery"
                     Clicked="OnVisualStateBtnClicked"/>
+                <Button
+                    x:Name="AdaptiveVisualStateBtn"
+                    Text="Adaptive VisualState Gallery"
+                    Clicked="OnAdaptiveVisualStateBtnClicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

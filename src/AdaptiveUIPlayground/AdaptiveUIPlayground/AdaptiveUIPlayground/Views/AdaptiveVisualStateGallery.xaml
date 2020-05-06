@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptiveUIPlayground.Views.AdaptiveVisualStateGallery"
+    Title="Adaptive VisualState Gallery">
+    <ContentPage.Content>
+        <StackLayout
+            x:Name="MainLayout">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="OrientationStates">
+                    <VisualState x:Name="Portrait">
+                        <VisualState.Setters>
+                            <Setter Property="Orientation" Value="Vertical" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Landscape">
+                        <VisualState.Setters>
+                            <Setter Property="Orientation" Value="Horizontal" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <StackLayout
+                x:Name="ItemsLayout"
+                Orientation="Horizontal">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="OrientationStates">
+                        <VisualState x:Name="Portrait">
+                            <VisualState.Setters>
+                                <Setter Property="Orientation" Value="Horizontal" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Landscape">
+                            <VisualState.Setters>
+                                <Setter Property="Orientation" Value="Vertical" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Label
+                    Text="Item 1"/>
+                <Label
+                    Text="Item 2"/>
+                <Label
+                    Text="Item 3"/>
+                <Label
+                    Text="Item 4"/>
+            </StackLayout>
+            <Grid
+                BackgroundColor="Gray"
+                HeightRequest="200"
+                WidthRequest="200"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
